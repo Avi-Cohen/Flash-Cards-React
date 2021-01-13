@@ -2,12 +2,14 @@ import React, {useContext, useState} from 'react';
 import {CardContext} from '../contexts/cardContext'
 
 const CardForm = () => {
-    const { addCard } = useContext(CardContext);
+    const { dispatch } = useContext(CardContext);
     const [eng, setEng] = useState('');
     const [heb, setHeb] = useState('');
 const handleSubmit = (e) => {
     e.preventDefault();
-    addCard(eng,heb);
+    dispatch({type: 'ADD_CARD', card: {
+        eng, heb
+    }});
     setEng('')
     setHeb('')
 }

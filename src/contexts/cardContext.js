@@ -1,9 +1,12 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useReducer, useEffect } from 'react';
+import { cardReducer } from '../reducers/cardReducer';
+
 
 export const CardContext = createContext();
 
+
 const CardContextProvider = (props) => {
-    const [cards, setCards] = useState([
+    const dictionary = [
         { eng: 'Hello', heb: 'שלום' },
         { eng: 'World', heb: 'עולם' },
         { eng: 'Rainbow', heb: 'קשת' },
@@ -16,17 +19,11 @@ const CardContextProvider = (props) => {
         { eng: 'Map', heb: 'מפה' },
         { eng: 'Compass', heb: 'מצפן' },
         { eng: 'Rabbi', heb: 'רב' }
-    ]);
-
-    const addCard = (eng, heb) => {
-        setCards([...cards, { eng, heb }])
-    }
-
-    const removeCard = (eng) => {
-        setCards(cards.filter(card => card.eng !== eng))
-    }
+    ]
+    const [cards, dispatch] = useReducer(cardReducer, dictionary);
+    
     return (
-        <CardContext.Provider value={{ cards, addCard, removeCard }}>
+        <CardContext.Provider value={{ cards, dispatch }}>
             {props.children}
         </CardContext.Provider>
     )

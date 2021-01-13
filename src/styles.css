@@ -28,7 +28,6 @@ body {
   margin: 10px 0;
 }
 
-
 .flash-card.back {
   transform: rotateY(360deg);
   background-color: rgb(235, 168, 110);
@@ -39,47 +38,46 @@ body {
 }
 
 form {
-    padding: 20px;
+  padding: 20px;
 }
 
-input[type='text'] {
-    width: 100px;
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 6px 0;
-    background: #3c1f3c;
-    color: #ffffff;
-    border: 0;
+input[type="text"] {
+  width: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background: #3c1f3c;
+  color: #ffffff;
+  border: 0;
 }
 
-input[type='submit']{
-    margin: 10px auto;
-    background: #eeeeee;
-    border:0;
-    padding: 6px 20px;
-    display: block;
-    cursor: pointer;
-    user-select: none;
+input[type="submit"] {
+  margin: 10px auto;
+  background: #eeeeee;
+  border: 0;
+  padding: 6px 20px;
+  display: block;
+  cursor: pointer;
+  user-select: none;
 }
 .flash-card {
-    color: darkviolet;
-    font-size: 34px;
-    height: 120px;
-    width: 140px;
-    transition: transform 1s;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .card-list li {
-    display: inline-block;
-    padding: 10px;
-    margin: 10px auto;
-    border-radius: 30px;
-    font-size: 34px;
-    line-height: 72px;
-    height: 120px;
-    width: 140px;
-    border: 5px solid rgb(47, 7, 72);
+  color: darkviolet;
+  font-size: 34px;
+  height: 120px;
+  width: 140px;
+  transition: transform 1s;
+  cursor: pointer;
+  user-select: none;
+}
 
-  }
+.card-list li {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 30px;
+  font-size: 34px;
+  line-height: 72px;
+  height: 120px;
+  width: 140px;
+  border: 5px solid rgb(47, 7, 72);
+}
