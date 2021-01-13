@@ -18,7 +18,7 @@ export default class RandomCard extends React.Component {
                 { eng: 'Goal', heb: 'מטרה' },
                 { eng: 'Map', heb: 'מפה' },
                 { eng: 'Compass', heb: 'מצפן' },
-                { eng: 'Rabi', heb: 'רב' }
+                { eng: 'Rabbi', heb: 'רב' }
             ]
         }
 
