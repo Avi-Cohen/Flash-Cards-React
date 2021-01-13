@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.css";
-import FullDictionary from "./FullDictionary"
 import RandomCard from "./components/RandomCard";
 import CardContextProvider from "./contexts/cardContext"
 import Navbar from "./components/Navbar"
